@@ -1605,7 +1605,7 @@ __p+='`),
           /\.webflow\.io$/i.test(b) && a.hostname !== b && (m = !0),
             m &&
               !u &&
-              ((f = f || v()),
+             // ((f = f || v()), //
               g(),
               setTimeout(g, 500),
               e(n).off(s, y).on(s, y));
@@ -1619,7 +1619,7 @@ __p+='`),
             !!n.webkitFullscreenElement;
           e(f).attr("style", m ? "display: none !important;" : "");
         }
-        function v() {
+        /* function v() {
           var m = e('<a class="w-webflow-badge"></a>').attr(
               "href",
               "https://webflow.com?utm_campaign=brandjs"
@@ -1638,7 +1638,7 @@ __p+='`),
               )
               .attr("alt", "Made in Webflow");
           return m.append(b, I), m[0];
-        }
+        } */
         function g() {
           var m = i.children(o),
             b = m.length && m.get(0) === f,
@@ -1686,7 +1686,7 @@ __p+='`),
             f()
           : i.on(u, v).triggerHandler(u);
         function v() {
-          s || (/\?edit/.test(a.hash) && f());
+          s || (/\?edit/.test(a.hash) && /*f()*/);
         }
         function g() {
           (s = !0),
