@@ -40,7 +40,7 @@
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link
-      href="https://cdn.jsdelivr.net/gh/DesignSensei/mymedicare@main/css/styles.css"
+      href="https://cdn.jsdelivr.net/gh/DesignSensei/mymedicare@main/css/styles.css?v=2"
       rel="stylesheet"
       type="text/css"
     />
@@ -93,7 +93,7 @@
         <div class="navbar-outer">
           <a href="/" aria-current="page" class="brand w-nav-brand w--current"
             ><img
-              src="https://raw.githubusercontent.com/DesignSensei/mymedicare/refs/heads/main/images/logo%20svg.svg"
+              src="https://raw.githubusercontent.com/DesignSensei/mymedicare/refs/heads/main/images/mymedicare_logo_redone-SVG.svg"
               loading="lazy"
               alt="Main logo"
           /></a>
@@ -1919,5 +1919,15 @@
       src="https://cdn.prod.website-files.com/66e05400096a16b32b75b781/js/webflow.b80665322.js"
       type="text/javascript"
     ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var badge = document.querySelector('a.w-webflow-badge');
+        if (badge) {
+          badge.style.visibility = 'hidden';
+          badge.style.opacity = '0';
+          badge.style.display = 'none';
+        }
+      });
+    </script>
   </body>
 </html>

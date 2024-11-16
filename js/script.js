@@ -1,4 +1,4 @@
-=(() => {
+const utilities =(() => {
   var jv = Object.create;
   var Dn = Object.defineProperty;
   var Yv = Object.getOwnPropertyDescriptor;
@@ -1608,7 +1608,7 @@ __p+='`),
              // ((f = f || v()), //
               g(),
               setTimeout(g, 500),
-              e(n).off(s, y).on(s, y));
+              e(n).off(s, y).on(s, y);
         };
         function y() {
           var m =
@@ -1686,7 +1686,7 @@ __p+='`),
             f()
           : i.on(u, v).triggerHandler(u);
         function v() {
-          s || (/\?edit/.test(a.hash) && /*f()*/);
+          s || (/\?edit/.test(a.hash) && f());
         }
         function g() {
           (s = !0),
