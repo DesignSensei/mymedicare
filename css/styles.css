@@ -113,6 +113,7 @@ html {
   
   button, html input[type="button"], input[type="reset"] {
     -webkit-appearance: button;
+    appearance: button;
     cursor: pointer;
   }
   
@@ -140,6 +141,7 @@ html {
   
   input[type="search"] {
     -webkit-appearance: none;
+    appearance: none;
   }
   
   input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
@@ -176,7 +178,6 @@ html {
   }
   
   [class^="w-icon-"], [class*=" w-icon-"] {
-    speak: none;
     font-variant: normal;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
@@ -276,6 +277,7 @@ html {
   
   input.w-button {
     -webkit-appearance: button;
+    appearance: button;
   }
   
   html[data-w-dynpage] [data-w-cloak] {
@@ -296,12 +298,12 @@ html {
   
   .w-webflow-badge, .w-webflow-badge * {
     z-index: auto;
-    visibility: visible;
+    visibility: hidden !important;
     box-sizing: border-box;
     float: none;
     clear: none;
     box-shadow: none;
-    opacity: 1;
+    opacity: 0 !important;
     direction: ltr;
     font-family: inherit;
     font-weight: inherit;
@@ -317,8 +319,8 @@ html {
     text-indent: 0;
     text-transform: inherit;
     text-shadow: none;
-    font-smoothing: auto;
-    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     cursor: inherit;
     white-space: inherit;
     word-break: normal;
@@ -337,7 +339,7 @@ html {
     padding: 0;
     list-style-type: disc;
     transition: none;
-    display: block;
+    display: none !important;
     position: static;
     inset: auto;
     overflow: visible;
@@ -367,20 +369,13 @@ html {
     overflow: visible !important;
     transform: none !important;
   }
-  
-  .w-webflow-badge > img {
-    visibility: visible !important;
-    opacity: 1 !important;
-    vertical-align: middle !important;
-    display: inline-block !important;
-  }
 
   .w-webflow-badge > img {
     visibility: hidden !important;
     opacity: 0 !important;
     display: none !important;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
     font-weight: bold;
@@ -489,6 +484,7 @@ html {
   button, [type="button"], [type="reset"] {
     cursor: pointer;
     -webkit-appearance: button;
+    appearance: button;
     border: 0;
   }
   
@@ -518,7 +514,6 @@ html {
   
   .w-input, .w-select {
     color: #333;
-    vertical-align: middle;
     background-color: #fff;
     border: 1px solid #ccc;
     width: 100%;
@@ -1192,7 +1187,6 @@ html {
     text-align: center;
     clear: both;
     -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
     background: #ddd;
     height: 300px;
     position: relative;
@@ -1223,7 +1217,6 @@ html {
     z-index: 2;
     text-align: center;
     -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
     height: 40px;
     margin: auto;
     padding-top: 10px;
@@ -1287,7 +1280,6 @@ html {
     cursor: pointer;
     color: #fff;
     -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
     -webkit-user-select: none;
     user-select: none;
     width: 80px;
@@ -1428,7 +1420,9 @@ html {
     z-index: 2000;
     opacity: 0;
     -webkit-user-select: none;
+    user-select: none;
     -moz-user-select: none;
+    -ms-user-select: none;
     -webkit-tap-highlight-color: transparent;
     background: #000000e6;
     outline: 0;
@@ -1441,6 +1435,9 @@ html {
     position: fixed;
     inset: 0;
     -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
   }
   
   .w-lightbox-backdrop, .w-lightbox-container {
@@ -1572,6 +1569,9 @@ html {
     padding: 2vh 1vh;
     display: inline-block;
     -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   
   .w-lightbox-active {
@@ -1901,7 +1901,6 @@ html {
     float: right;
     cursor: pointer;
     -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
     -webkit-user-select: none;
     user-select: none;
     padding: 18px;
@@ -2065,7 +2064,7 @@ html {
     --body: #333;
     --border: #dae7eb;
     --background: #eff6f9;
-    --primary: #009ace;
+    --primary: #0058e6;
     --white: white;
     --transparent: transparent;
     --mobile-landscape: 80px;
@@ -2686,6 +2685,7 @@ html {
   }
   
   .subtitle-icon {
+    color: var(--primary)
     justify-content: center;
     align-items: center;
     width: 100%;
