@@ -2581,10 +2581,17 @@ html {
   }
   
   .brand {
-    width: 100%;
-    min-width: 174px;
-    max-width: 174px;
-    height: 29px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .brand img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
   
   .nav-link {
@@ -2617,6 +2624,9 @@ html {
     justify-content: space-between;
     align-items: center;
     display: flex;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box; 
   }
   
   .nav-inner {
@@ -2685,7 +2695,6 @@ html {
   }
   
   .subtitle-icon {
-    color: var(--primary)
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -2694,7 +2703,7 @@ html {
     height: 16px;
     display: flex;
   }
-  
+
   .subtitle-text {
     color: var(--primary);
   }
