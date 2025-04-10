@@ -1,0 +1,634 @@
+# <section class="video-section section-padding-sm remove-bottom-padding">
+#       <div class="w-layout-blockcontainer container w-container">
+#         <div
+#           data-w-id="ae0bdce3-83d6-5afe-c6a1-b9f6d2e3f97c"
+#           style="opacity: 0"
+#           class="video-wrapper"
+#         >
+#           <h2 class="section-title-heading video">
+#             See how MyMedicare has transformed lives through personalized
+#             <span class="section-title-heading-span"
+#               >health tracking and support</span
+#             >
+#           </h2>
+#           <div class="video-box-wrapper">
+#             <div class="video-box-list-1">
+#               <div class="video-box _1">
+#                 <main
+#                   data-poster-url="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67514b31ba721d5ac9e1e9ef_1%20%28online-video-cuttercom%29-poster-00001.jpg"
+#                   data-video-urls="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67514b31ba721d5ac9e1e9ef_1%20%28online-video-cuttercom%29-transcode.mp4,https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67514b31ba721d5ac9e1e9ef_1%20%28online-video-cuttercom%29-transcode.webm"
+#                   data-autoplay="false"
+#                   data-loop="true"
+#                   data-wf-ignore="true"
+#                   class="background-video w-background-video w-background-video-atom"
+#                 >
+#                   <video
+#                     id="c7026e5b-38fc-118d-f528-2d37d1db9c15-video"
+#                     loop=""
+#                     style="
+#                       background-image: url('https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67514b31ba721d5ac9e1e9ef_1%20%28online-video-cuttercom%29-poster-00001.jpg');
+#                     "
+#                     muted=""
+#                     playsinline=""
+#                     data-wf-ignore="true"
+#                     data-object-fit="cover"
+#                   >
+#                     <source
+#                       src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67514b31ba721d5ac9e1e9ef_1%20%28online-video-cuttercom%29-transcode.mp4"
+#                       data-wf-ignore="true"
+#                     />
+#                     <source
+#                       src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67514b31ba721d5ac9e1e9ef_1%20%28online-video-cuttercom%29-transcode.webm"
+#                       data-wf-ignore="true"
+#                     />
+#                   </video>
+#                   <div class="video-button-wrapper">
+#                     <noscript
+#                       ><img
+#                         data-wf-bgvideo-fallback-img="true"
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67514b31ba721d5ac9e1e9ef_1%20%28online-video-cuttercom%29-poster-00001.jpg"
+#                         alt=""
+#                     /></noscript>
+#                     <div aria-live="polite">
+#                       <button
+#                         type="button"
+#                         data-w-bg-video-control="true"
+#                         aria-controls="c7026e5b-38fc-118d-f528-2d37d1db9c15-video"
+#                         class="w-backgroundvideo-backgroundvideoplaypausebutton video-button-area w-background-video--control"
+#                       >
+#                         <span class="video-state-btn"
+#                           ><img
+#                             loading="lazy"
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602fb586a49fe1236feab_pause.png"
+#                             alt="Pause video"
+#                             class="video-btn" /></span
+#                         ><span hidden="" class="video-state-btn"
+#                           ><img
+#                             loading="lazy"
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602768ffe48f18fe723a1_play-button%201.svg"
+#                             alt="Play video"
+#                             class="video-btn"
+#                         /></span>
+#                       </button>
+#                     </div>
+#                   </div>
+#                   <div class="video-content">
+#                     <div class="user-panel-2">
+#                       <img
+#                         loading="lazy"
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/6749c5340fe845ac7c8e4536_user-4.png"
+#                         alt=""
+#                         class="user-box-img-2"
+#                       />
+#                       <p class="user-name">Guy Hawkins</p>
+#                     </div>
+#                     <div class="video-tag-list">
+#                       <div
+#                         data-wf--tag-item--variant="style-3"
+#                         class="tag-item w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                       >
+#                         <p
+#                           class="tag-item-text w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                         >
+#                           Boost in physical
+#                         </p>
+#                       </div>
+#                       <div
+#                         data-wf--tag-item--variant="style-3"
+#                         class="tag-item w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                       >
+#                         <p
+#                           class="tag-item-text w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                         >
+#                           activity levels
+#                         </p>
+#                       </div>
+#                     </div>
+#                   </div>
+#                   <img
+#                     sizes="100vw"
+#                     srcset="
+#                       https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bca4629839e2d49e00_img-5-p-500.png 500w,
+#                       https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bca4629839e2d49e00_img-5.png       754w
+#                     "
+#                     alt=""
+#                     src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bca4629839e2d49e00_img-5.png"
+#                     loading="lazy"
+#                     class="video-bg-image"
+#                   />
+#                 </main>
+#               </div>
+#               <div class="video-box _2">
+#                 <main
+#                   data-poster-url="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edaa88_2-poster-00001.jpg"
+#                   data-video-urls="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edaa88_2-transcode.mp4,https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edaa88_2-transcode.webm"
+#                   data-autoplay="false"
+#                   data-loop="true"
+#                   data-wf-ignore="true"
+#                   class="background-video w-background-video w-background-video-atom"
+#                 >
+#                   <video
+#                     id="658c3479-6498-8d45-5be6-6be62838ab32-video"
+#                     loop=""
+#                     style="
+#                       background-image: url('https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edaa88_2-poster-00001.jpg');
+#                     "
+#                     muted=""
+#                     playsinline=""
+#                     data-wf-ignore="true"
+#                     data-object-fit="cover"
+#                   >
+#                     <source
+#                       src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edaa88_2-transcode.mp4"
+#                       data-wf-ignore="true"
+#                     />
+#                     <source
+#                       src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edaa88_2-transcode.webm"
+#                       data-wf-ignore="true"
+#                     />
+#                   </video>
+#                   <div class="video-button-wrapper">
+#                     <noscript
+#                       ><img
+#                         data-wf-bgvideo-fallback-img="true"
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edaa88_2-poster-00001.jpg"
+#                         alt=""
+#                     /></noscript>
+#                     <div aria-live="polite">
+#                       <button
+#                         type="button"
+#                         data-w-bg-video-control="true"
+#                         aria-controls="658c3479-6498-8d45-5be6-6be62838ab32-video"
+#                         class="w-backgroundvideo-backgroundvideoplaypausebutton video-button-area w-background-video--control"
+#                       >
+#                         <span class="video-state-btn"
+#                           ><img
+#                             loading="lazy"
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602fb586a49fe1236feab_pause.png"
+#                             alt="Pause video"
+#                             class="video-btn" /></span
+#                         ><span hidden="" class="video-state-btn"
+#                           ><img
+#                             loading="lazy"
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602768ffe48f18fe723a1_play-button%201.svg"
+#                             alt="Play video"
+#                             class="video-btn"
+#                         /></span>
+#                       </button>
+#                     </div>
+#                   </div>
+#                   <img
+#                     src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bc3ff76363296efbb0_img-6.png"
+#                     loading="lazy"
+#                     alt=""
+#                     class="video-bg-image"
+#                   />
+#                 </main>
+#               </div>
+#             </div>
+#             <div class="video-box-group-1">
+#               <div class="video-box-list-2">
+#                 <div class="video-box _3">
+#                   <main
+#                     data-poster-url="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edab33_3-poster-00001.jpg"
+#                     data-video-urls="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edab33_3-transcode.mp4,https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edab33_3-transcode.webm"
+#                     data-autoplay="false"
+#                     data-loop="true"
+#                     data-wf-ignore="true"
+#                     class="background-video w-background-video w-background-video-atom"
+#                   >
+#                     <video
+#                       id="b2a78965-71e8-124f-b64f-a6f49b03f43d-video"
+#                       loop=""
+#                       style="
+#                         background-image: url('https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edab33_3-poster-00001.jpg');
+#                       "
+#                       muted=""
+#                       playsinline=""
+#                       data-wf-ignore="true"
+#                       data-object-fit="cover"
+#                     >
+#                       <source
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edab33_3-transcode.mp4"
+#                         data-wf-ignore="true"
+#                       />
+#                       <source
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edab33_3-transcode.webm"
+#                         data-wf-ignore="true"
+#                       />
+#                     </video>
+#                     <div class="video-button-wrapper">
+#                       <noscript
+#                         ><img
+#                           data-wf-bgvideo-fallback-img="true"
+#                           src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F67469be284b048fa58edab33_3-poster-00001.jpg"
+#                           alt=""
+#                       /></noscript>
+#                       <div aria-live="polite">
+#                         <button
+#                           type="button"
+#                           data-w-bg-video-control="true"
+#                           aria-controls="b2a78965-71e8-124f-b64f-a6f49b03f43d-video"
+#                           class="w-backgroundvideo-backgroundvideoplaypausebutton video-button-area w-background-video--control"
+#                         >
+#                           <span class="video-state-btn"
+#                             ><img
+#                               loading="lazy"
+#                               src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602fb586a49fe1236feab_pause.png"
+#                               alt="Pause video"
+#                               class="video-btn" /></span
+#                           ><span hidden="" class="video-state-btn"
+#                             ><img
+#                               loading="lazy"
+#                               src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602768ffe48f18fe723a1_play-button%201.svg"
+#                               alt="Play video"
+#                               class="video-btn"
+#                           /></span>
+#                         </button>
+#                       </div>
+#                     </div>
+#                     <img
+#                       src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bc3c03082e07d8a362_img-7.png"
+#                       loading="lazy"
+#                       alt=""
+#                       class="video-bg-image"
+#                     />
+#                   </main>
+#                 </div>
+#                 <div class="video-box _4">
+#                   <main
+#                     data-poster-url="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e32aaf65137d908fcb86_4-poster-00001.jpg"
+#                     data-video-urls="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e32aaf65137d908fcb86_4-transcode.mp4,https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e32aaf65137d908fcb86_4-transcode.webm"
+#                     data-autoplay="false"
+#                     data-loop="true"
+#                     data-wf-ignore="true"
+#                     class="background-video w-background-video w-background-video-atom"
+#                   >
+#                     <video
+#                       id="b2a78965-71e8-124f-b64f-a6f49b03f44f-video"
+#                       loop=""
+#                       style="
+#                         background-image: url('https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e32aaf65137d908fcb86_4-poster-00001.jpg');
+#                       "
+#                       muted=""
+#                       playsinline=""
+#                       data-wf-ignore="true"
+#                       data-object-fit="cover"
+#                     >
+#                       <source
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e32aaf65137d908fcb86_4-transcode.mp4"
+#                         data-wf-ignore="true"
+#                       />
+#                       <source
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e32aaf65137d908fcb86_4-transcode.webm"
+#                         data-wf-ignore="true"
+#                       />
+#                     </video>
+#                     <div class="video-button-wrapper">
+#                       <noscript
+#                         ><img
+#                           data-wf-bgvideo-fallback-img="true"
+#                           src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e32aaf65137d908fcb86_4-poster-00001.jpg"
+#                           alt=""
+#                       /></noscript>
+#                       <div aria-live="polite">
+#                         <button
+#                           type="button"
+#                           data-w-bg-video-control="true"
+#                           aria-controls="b2a78965-71e8-124f-b64f-a6f49b03f44f-video"
+#                           class="w-backgroundvideo-backgroundvideoplaypausebutton video-button-area w-background-video--control"
+#                         >
+#                           <span class="video-state-btn"
+#                             ><img
+#                               loading="lazy"
+#                               src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602fb586a49fe1236feab_pause.png"
+#                               alt="Pause video"
+#                               class="video-btn" /></span
+#                           ><span hidden="" class="video-state-btn"
+#                             ><img
+#                               loading="lazy"
+#                               src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602768ffe48f18fe723a1_play-button%201.svg"
+#                               alt="Play video"
+#                               class="video-btn"
+#                           /></span>
+#                         </button>
+#                       </div>
+#                     </div>
+#                     <img
+#                       src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bcf64be44c1d908f36_img-8.png"
+#                       loading="lazy"
+#                       alt=""
+#                       class="video-bg-image"
+#                     />
+#                   </main>
+#                 </div>
+#               </div>
+#               <div class="video-box-group-2">
+#                 <div class="video-box-list-3">
+#                   <div class="video-box _5">
+#                     <main
+#                       data-poster-url="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33265703fcc51367602_5-poster-00001.jpg"
+#                       data-video-urls="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33265703fcc51367602_5-transcode.mp4,https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33265703fcc51367602_5-transcode.webm"
+#                       data-autoplay="false"
+#                       data-loop="true"
+#                       data-wf-ignore="true"
+#                       class="background-video w-background-video w-background-video-atom"
+#                     >
+#                       <video
+#                         id="2f27847a-dc55-9e21-7c83-c649b698366f-video"
+#                         loop=""
+#                         style="
+#                           background-image: url('https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33265703fcc51367602_5-poster-00001.jpg');
+#                         "
+#                         muted=""
+#                         playsinline=""
+#                         data-wf-ignore="true"
+#                         data-object-fit="cover"
+#                       >
+#                         <source
+#                           src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33265703fcc51367602_5-transcode.mp4"
+#                           data-wf-ignore="true"
+#                         />
+#                         <source
+#                           src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33265703fcc51367602_5-transcode.webm"
+#                           data-wf-ignore="true"
+#                         />
+#                       </video>
+#                       <div class="video-button-wrapper">
+#                         <noscript
+#                           ><img
+#                             data-wf-bgvideo-fallback-img="true"
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33265703fcc51367602_5-poster-00001.jpg"
+#                             alt=""
+#                         /></noscript>
+#                         <div aria-live="polite">
+#                           <button
+#                             type="button"
+#                             data-w-bg-video-control="true"
+#                             aria-controls="2f27847a-dc55-9e21-7c83-c649b698366f-video"
+#                             class="w-backgroundvideo-backgroundvideoplaypausebutton video-button-area w-background-video--control"
+#                           >
+#                             <span class="video-state-btn"
+#                               ><img
+#                                 loading="lazy"
+#                                 src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602fb586a49fe1236feab_pause.png"
+#                                 alt="Pause video"
+#                                 class="video-btn" /></span
+#                             ><span hidden="" class="video-state-btn"
+#                               ><img
+#                                 loading="lazy"
+#                                 src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602768ffe48f18fe723a1_play-button%201.svg"
+#                                 alt="Play video"
+#                                 class="video-btn"
+#                             /></span>
+#                           </button>
+#                         </div>
+#                       </div>
+#                       <div class="video-content">
+#                         <div class="user-panel-2">
+#                           <img
+#                             loading="lazy"
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/6749c5340fe845ac7c8e4536_user-4.png"
+#                             alt=""
+#                             class="user-box-img-2"
+#                           />
+#                           <p class="user-name">Guy Hawkins</p>
+#                         </div>
+#                         <div class="video-tag-list">
+#                           <div
+#                             data-wf--tag-item--variant="style-3"
+#                             class="tag-item w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                           >
+#                             <p
+#                               class="tag-item-text w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                             >
+#                               Boost in physical
+#                             </p>
+#                           </div>
+#                           <div
+#                             data-wf--tag-item--variant="style-3"
+#                             class="tag-item w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                           >
+#                             <p
+#                               class="tag-item-text w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                             >
+#                               activity levels
+#                             </p>
+#                           </div>
+#                         </div>
+#                       </div>
+#                       <img
+#                         sizes="100vw"
+#                         srcset="
+#                           https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bc7b45156cf2677c92_img-9-p-500.png 500w,
+#                           https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bc7b45156cf2677c92_img-9.png       622w
+#                         "
+#                         alt=""
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bc7b45156cf2677c92_img-9.png"
+#                         loading="lazy"
+#                         class="video-bg-image"
+#                       />
+#                     </main>
+#                   </div>
+#                 </div>
+#                 <div class="video-box-list-4">
+#                   <div class="video-box _6">
+#                     <main
+#                       data-poster-url="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33a67d7137619142703_6-poster-00001.jpg"
+#                       data-video-urls="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33a67d7137619142703_6-transcode.mp4,https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33a67d7137619142703_6-transcode.webm"
+#                       data-autoplay="false"
+#                       data-loop="true"
+#                       data-wf-ignore="true"
+#                       class="background-video w-background-video w-background-video-atom"
+#                     >
+#                       <video
+#                         id="9074fe4c-0e3a-8637-1c35-9d17b5b1c3bf-video"
+#                         loop=""
+#                         style="
+#                           background-image: url('https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33a67d7137619142703_6-poster-00001.jpg');
+#                         "
+#                         muted=""
+#                         playsinline=""
+#                         data-wf-ignore="true"
+#                         data-object-fit="cover"
+#                       >
+#                         <source
+#                           src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33a67d7137619142703_6-transcode.mp4"
+#                           data-wf-ignore="true"
+#                         />
+#                         <source
+#                           src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33a67d7137619142703_6-transcode.webm"
+#                           data-wf-ignore="true"
+#                         />
+#                       </video>
+#                       <div class="video-button-wrapper">
+#                         <noscript
+#                           ><img
+#                             data-wf-bgvideo-fallback-img="true"
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e33a67d7137619142703_6-poster-00001.jpg"
+#                             alt=""
+#                         /></noscript>
+#                         <div aria-live="polite">
+#                           <button
+#                             type="button"
+#                             data-w-bg-video-control="true"
+#                             aria-controls="9074fe4c-0e3a-8637-1c35-9d17b5b1c3bf-video"
+#                             class="w-backgroundvideo-backgroundvideoplaypausebutton video-button-area w-background-video--control"
+#                           >
+#                             <span class="video-state-btn"
+#                               ><img
+#                                 loading="lazy"
+#                                 src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602fb586a49fe1236feab_pause.png"
+#                                 alt="Pause video"
+#                                 class="video-btn" /></span
+#                             ><span hidden="" class="video-state-btn"
+#                               ><img
+#                                 loading="lazy"
+#                                 src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602768ffe48f18fe723a1_play-button%201.svg"
+#                                 alt="Play video"
+#                                 class="video-btn"
+#                             /></span>
+#                           </button>
+#                         </div>
+#                       </div>
+#                       <div class="video-content">
+#                         <div class="user-panel-2">
+#                           <img
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/6749c5340fe845ac7c8e4536_user-4.png"
+#                             loading="lazy"
+#                             alt=""
+#                             class="user-box-img-2"
+#                           />
+#                           <p class="user-name">Guy Hawkins</p>
+#                         </div>
+#                         <div class="video-tag-list">
+#                           <div
+#                             data-wf--tag-item--variant="style-3"
+#                             class="tag-item w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                           >
+#                             <p
+#                               class="tag-item-text w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                             >
+#                               Boost in physical
+#                             </p>
+#                           </div>
+#                           <div
+#                             data-wf--tag-item--variant="style-3"
+#                             class="tag-item w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                           >
+#                             <p
+#                               class="tag-item-text w-variant-919665e2-3ef6-2322-ca9b-c86354232150"
+#                             >
+#                               activity levels
+#                             </p>
+#                           </div>
+#                         </div>
+#                       </div>
+#                       <img
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bc4d0e78ca44ea0c9c_img-10.png"
+#                         loading="lazy"
+#                         sizes="100vw"
+#                         srcset="
+#                           https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bc4d0e78ca44ea0c9c_img-10-p-500.png 500w,
+#                           https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bc4d0e78ca44ea0c9c_img-10.png       754w
+#                         "
+#                         alt=""
+#                         class="video-bg-image"
+#                       />
+#                     </main>
+#                   </div>
+#                   <div class="video-box _7">
+#                     <main
+#                       data-poster-url="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e340d4977682bbf0ad03_7-poster-00001.jpg"
+#                       data-video-urls="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e340d4977682bbf0ad03_7-transcode.mp4,https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e340d4977682bbf0ad03_7-transcode.webm"
+#                       data-autoplay="false"
+#                       data-loop="true"
+#                       data-wf-ignore="true"
+#                       class="background-video w-background-video w-background-video-atom"
+#                     >
+#                       <video
+#                         id="4977345b-9e27-d5ba-c18f-102a2fb1d355-video"
+#                         loop=""
+#                         style="
+#                           background-image: url('https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e340d4977682bbf0ad03_7-poster-00001.jpg');
+#                         "
+#                         muted=""
+#                         playsinline=""
+#                         data-wf-ignore="true"
+#                         data-object-fit="cover"
+#                       >
+#                         <source
+#                           src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e340d4977682bbf0ad03_7-transcode.mp4"
+#                           data-wf-ignore="true"
+#                         />
+#                         <source
+#                           src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e340d4977682bbf0ad03_7-transcode.webm"
+#                           data-wf-ignore="true"
+#                         /></video
+#                       ><img
+#                         src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/674857bb3ff76363296efb9d_img-11.png"
+#                         loading="lazy"
+#                         alt=""
+#                         class="video-bg-image"
+#                       />
+#                       <div class="video-button-wrapper">
+#                         <noscript
+#                           ><img
+#                             data-wf-bgvideo-fallback-img="true"
+#                             src="https://cdn.prod.website-files.com/67469be284b048fa58eda575%2F6749e340d4977682bbf0ad03_7-poster-00001.jpg"
+#                             alt=""
+#                         /></noscript>
+#                         <div aria-live="polite">
+#                           <button
+#                             type="button"
+#                             data-w-bg-video-control="true"
+#                             aria-controls="4977345b-9e27-d5ba-c18f-102a2fb1d355-video"
+#                             class="w-backgroundvideo-backgroundvideoplaypausebutton video-button-area w-background-video--control"
+#                           >
+#                             <span class="video-state-btn"
+#                               ><img
+#                                 loading="lazy"
+#                                 src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602fb586a49fe1236feab_pause.png"
+#                                 alt="Pause video"
+#                                 class="video-btn" /></span
+#                             ><span hidden="" class="video-state-btn"
+#                               ><img
+#                                 loading="lazy"
+#                                 src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/675602768ffe48f18fe723a1_play-button%201.svg"
+#                                 alt="Play video"
+#                                 class="video-btn"
+#                             /></span>
+#                           </button>
+#                         </div>
+#                       </div>
+#                     </main>
+#                   </div>
+#                 </div>
+#               </div>
+#             </div>
+#           </div>
+#           <div class="video-bottom-block">
+#             <h3 class="video-bottom-text">
+#               Have a success story with MyMedicare? We’d love to
+#               <span class="opacity-50">hear from you!</span>
+#             </h3>
+#             <a
+#               data-wf--button--variant="border-sm"
+#               data-w-id="6140ac12-e782-d67b-bc27-3a3036803ae7"
+#               href="/contact"
+#               class="button w-variant-ac08d2a5-a49c-f69a-dbbf-12535f988a9f w-inline-block"
+#               ><div class="button-area">
+#                 <div class="button-text">Share your video</div>
+#                 <div class="button-icon-wrapper">
+#                   <img
+#                     src="https://cdn.prod.website-files.com/67469be284b048fa58eda575/67469be284b048fa58edab3a_cheveron-right-white.svg"
+#                     loading="lazy"
+#                     alt=""
+#                     class="button-right-icon"
+#                   />
+#                 </div></div
+#             ></a>
+#           </div>
+#         </div>
+#       </div>
+#     </section>
