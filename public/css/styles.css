@@ -6,6 +6,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   background-color: #fff;
   min-height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -763,6 +764,251 @@ textarea.w-select {
 .w-hidden-main {
   display: none !important;
 }
+
+.smart-insights-visual-wrapper {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto 0;
+  max-width: 1600px;
+}
+
+.phone-mockup-container {
+  position: relative;
+  width: 1000px;
+  height: auto;
+}
+
+.phone-mockup-main {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 25px 70px rgba(0, 0, 0, 0.12));
+}
+
+.floating-widget {
+  position: absolute;
+  animation: float-smooth 4s ease-in-out infinite;
+  filter: drop-shadow(0 15px 40px rgba(0, 0, 0, 0.08));
+  transition: transform 0.3s ease;
+  z-index: 5;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+
+.floating-widget:hover {
+  transform: translateY(-5px) scale(1.02);
+  overflow: visible !important;
+}
+
+.widget-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.vitals-position {
+  top: 5%;
+  left: 20%;
+  width: 25%;
+  animation-delay: 0s;
+}
+
+.chart-position {
+  top: 40%;
+  left: 2%;
+  width: 30%;
+  animation-delay: 0.8s;
+}
+
+.medication-position {
+  top: 12%;
+  right: 10%;
+  width: 20%;
+  animation-delay: 0.4s;
+}
+
+.food-position {
+  bottom: 10%;
+  right: 20%;
+  width: 20%;
+  animation-delay: 1.2s;
+}
+
+@keyframes float-smooth {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .smart-insights-visual-wrapper {
+    height: 700px;
+  }
+
+  .phone-mockup-container {
+    width: 850px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .smart-insights-visual-wrapper {
+    height: 650px;
+  }
+
+  .phone-mockup-container {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .smart-insights-visual-wrapper {
+    height: 600px;
+  }
+
+  .phone-mockup-container {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .smart-insights-visual-wrapper {
+    height: 550px;
+  }
+
+  .phone-mockup-container {
+    width: 750px;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .smart-insights-visual-wrapper {
+    height: 500px;
+  }
+
+  .phone-mockup-container {
+    width: 600px;
+  }
+
+  .vitals-position {
+    top: 4%;
+    left: 18%;
+    width: 32%;
+  }
+
+  .chart-position {
+    top: 42%;
+    left: 4%;
+    width: 32%;
+  }
+
+  .medication-position {
+    top: 8%;
+    right: 12%;
+    width: 20%;
+  }
+
+  .food-position {
+    bottom: 9%;
+    right: 18%;
+    width: 23%;
+  }
+}
+
+
+@media screen and (max-width: 479px) {
+  .smart-insights-visual-wrapper {
+    height: 300px;
+  }
+
+  .phone-mockup-container {
+    width: 500px;
+  }
+
+  .vitals-position {
+    top: 4%;
+    left: 12%;
+    width: 28%;
+  }
+
+  .chart-position {
+    top: 42%;
+    left: 5%;
+    width: 32%;
+  }
+
+  .medication-position {
+    top: 14%;
+    right: 12%;
+    width: 23%;
+  }
+
+  .food-position {
+    bottom: 12%;
+    right: 22%;
+    width: 23%;
+  }
+
+  .floating-widget,
+  .widget-image {
+    border-radius: 0 !important;
+  }
+
+  .floating-widget {
+    animation: float-smooth 5s ease-in-out infinite;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .smart-insights-visual-wrapper {
+    height: 200px;
+  }
+
+  .phone-mockup-container {
+    width: 400px;
+  }
+
+  .vitals-position {
+    top: 10%;
+    left: 24%;
+    width: 30%;
+  }
+
+  .chart-position {
+    top: 44%;
+    left: 8%;
+    width: 34%;
+  }
+
+  .medication-position {
+    top: 16%;
+    right: 14%;
+    width: 25%;
+  }
+
+  .food-position {
+    bottom: 14%;
+    right: 24%;
+    width: 25%;
+  }
+
+  .floating-widget,
+  .widget-image {
+  border-radius: 0 !important;
+  }
+}
+
+
 @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px;
@@ -870,6 +1116,7 @@ textarea.w-select {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 479px) {
   .w-container {
     max-width: none;
@@ -921,7 +1168,24 @@ textarea.w-select {
   .w-col-tiny-12 {
     width: 100%;
   }
+ .floating-widget {
+   animation: float-smooth 5s ease-in-out infinite;
+ }
+
+ .benefits-center-content {
+   margin: 0 auto 30px;
+ }
 }
+
+.widget-image {
+  object-fit: cover !important;
+  width: 105% !important;
+  height: 105% !important;
+  margin-left: -2.5% !important;
+  margin-top: -2.5% !important;
+  image-rendering: crisp-edges;
+}
+
 .w-widget {
   position: relative;
 }
@@ -1315,7 +1579,7 @@ textarea.w-select {
   -webkit-tap-highlight-color: transparent;
   background: #000000e6;
   outline: 0;
-  font-family: Helvetica Neue, Helvetica, Ubuntu, Segoe UI, Verdana, sans-serif;
+  font-family: "Inter", Helvetica Neue, Helvetica, Ubuntu, Segoe UI, Verdana, sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
@@ -1868,7 +2132,7 @@ textarea.w-select {
 }
 
 :root {
-  --font--primary-font: Urbanist, sans-serif;
+  --font--primary-font: "Inter", sans-serif;
   --color--neutral-03: #3b3b3b;
   --color--neutral-04: #0a0a0a;
   --color--theme-color-02: #0058e6;
@@ -3148,6 +3412,9 @@ img {
   padding-top: var(--size--global-section-padding-sm);
   padding-bottom: var(--size--global-section-padding-sm);
 }
+.remove-top-padding {
+  padding-top: 0;
+}
 .remove-bottom-padding {
   padding-bottom: 0;
 }
@@ -4134,7 +4401,7 @@ img {
   grid-column-gap: 80px;
   grid-row-gap: 80px;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   width: 100%;
   margin-left: auto;
@@ -4170,15 +4437,18 @@ img {
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
+  flex-grow: 1;
 }
 
 .pricing-card-body-footer.active {
-  background-image: linear-gradient(
-    #c9eefe00,
-    #caeefe80 99.9%,
-    #cbefff 100%,
-    #fff
-  );
+  background: linear-gradient(to bottom,
+      #c9eefe00 0%,
+      #caeefe80 70%,
+      #cbefff 90%,
+      #ffffff 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .pricng-card-top-heading {
@@ -4190,6 +4460,10 @@ img {
 
 .pricing-price {
   font-size: 48px;
+}
+
+.pricing-price-2 {
+  font-size: 40px;
 }
 
 .pricing-body-content {
@@ -4438,6 +4712,7 @@ img {
   display: flex;
   overflow: hidden;
   height: 100%; 
+  height: 100%;
 }
 
 .card-price-block {
@@ -4523,7 +4798,7 @@ img {
   grid-row-gap: 24px;
   flex-flow: wrap;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: center;
   place-items: start center;
@@ -4543,6 +4818,34 @@ img {
   align-items: center;
   width: 100%;
   display: flex;
+  margin-top: auto;
+}
+
+/* Styling for the WhatsApp Icon inside the button */
+.pricing-button.is-whatsapp {
+  background-color: #25D366;
+  /* Official WhatsApp Green */
+  border-color: #25D366;
+  /* If you have borders */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.pricing-button.is-whatsapp i {
+  color: white;
+  /* White Icon */
+  font-size: 24px;
+  /* Adjust size to match the previous arrow */
+}
+
+/* Optional: Hover effect */
+.pricing-button.is-whatsapp:hover {
+  background-color: #1ebc57;
+  /* Slightly darker green on hover */
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
 }
 
 .decorative-image-container {
@@ -4935,7 +5238,7 @@ img {
 }
 .hero-wrapper {
   z-index: 1;
-  background-image: url(https://cdn.prod.website-files.com/67469be284b048fa58eda575/6747ee0659ab31578cd619be_hero-img.png);
+  background-image: url("../images/hero-section-image.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4968,7 +5271,9 @@ img {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
   border-radius: var(--size--button-radius);
-  background-color: #b8cfd7;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background-color: #8898ab80;
   align-items: center;
   padding: 4px 14px;
   display: flex;
@@ -4990,6 +5295,14 @@ img {
   color: var(--color--neutral-01);
   letter-spacing: -2px;
   font-size: 80px;
+  font-weight: 600;
+  line-height: 95%;
+}
+.hero-title-2 {
+  font-family: var(--font--primary-font);
+  color: var(--color--neutral-01);
+  letter-spacing: -2px;
+  font-size: 64px;
   font-weight: 600;
   line-height: 95%;
 }
@@ -5405,7 +5718,7 @@ img {
 
 .tips-wrapper {
   z-index: 1;
-  background-image: url(..//images/happy-man-01.png);
+  background-image: url(../images/happy-man-01.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5522,7 +5835,6 @@ img {
   width: 100%;
   max-width: 550px;
   font-size: 54px;
-  margin-right: 120px;
 }
 
 .section-title-heading.pricing {
@@ -6519,6 +6831,16 @@ img {
   max-width: 564px;
   display: flex;
 }
+.benefits-center-content {
+  display: flex;
+  max-width: 800px;
+  flex-flow: column;
+  gap: 40px;
+  margin: 20px auto 0px auto;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
 .benefits-heading {
   width: 100%;
   max-width: 488px;
@@ -6605,7 +6927,7 @@ img {
 .text-16px-semibold-2 {
   color: #000;
   margin-bottom: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 170%;
@@ -6627,7 +6949,7 @@ img {
   display: flex;
 }
 
-#nav-disappear {
+.list-item.nav-disappear {
   display: none;
 }
 
@@ -6844,7 +7166,7 @@ img {
 
   .cta-section {
     background-image: none;
-    padding-top: 0;
+    padding-top: 40px;
     padding-bottom: 0;
   }
 
@@ -7024,6 +7346,9 @@ img {
   }
   .hero-title {
     font-size: 50px;
+  }
+  .hero-title-2 {
+    font-size: 48px;
   }
   .hero-content-wrappper {
     grid-column-gap: 40px;
@@ -7316,13 +7641,13 @@ img {
   .playstore-button {
     max-width: 300px;
     font-size: 20px;
-    padding: 12px 20px;
-    margin-left: auto;
     margin-right: auto;
     display: flex;
   }
 
-
+  .list-item.nav-disappear {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7695,6 +8020,9 @@ img {
     letter-spacing: -2.5px;
     font-size: 42px;
   }
+  .hero-title-2 {
+    font-size: 36px;
+  }
   .tag-list.hero-tag-list {
     justify-content: center;
     max-width: 100%;
@@ -7890,7 +8218,6 @@ img {
     max-width: 300px;
     font-size: 20px;
     padding: 12px 20px;
-    margin-left: auto;
     margin-right: auto;
     display: flex;
   }
@@ -8138,6 +8465,9 @@ img {
   }
   .hero-title {
     font-size: 36px;
+  }
+  .hero-title {
+    font-size: 32px;
   }
   .hero-content-wrappper {
     padding-left: 20px;

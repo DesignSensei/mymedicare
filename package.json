@@ -1,17 +1,30 @@
 {
   "name": "mymedicare",
   "version": "1.0.0",
-  "scripts": {
-    "start": "lite-server --baseDir public"
+  "description": "Telemedicine and remote monitoring platform for Africa.",
+  "homepage": "https://github.com/DesignSensei/mymedicare#readme",
+  "bugs": {
+    "url": "https://github.com/DesignSensei/mymedicare/issues"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesignSensei/mymedicare.git"
+  },
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
+  "author": "Zuke",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "dotenv": "^16.5.0"
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.0",
+    "winston": "^3.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
