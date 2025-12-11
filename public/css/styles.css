@@ -5238,7 +5238,7 @@ img {
 }
 .hero-wrapper {
   z-index: 1;
-  background-image: url("../images/hero-section-image.png");
+  background-image: url("../assets/images/hero-section-image.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5718,7 +5718,7 @@ img {
 
 .tips-wrapper {
   z-index: 1;
-  background-image: url(../images/happy-man-01.png);
+  background-image: url("../assets/images/happy-man-01.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5777,7 +5777,7 @@ img {
 .insight-banner {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  background-image: url(../images/Remote-Monitoring-Float.png);
+  background-image: url("../assets/images/Remote-Monitoring-Float.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;

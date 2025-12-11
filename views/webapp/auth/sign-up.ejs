@@ -1,0 +1,731 @@
+<!-- views/webapp/auth/sign-up.ejs -->
+
+<!--begin::Form-->
+<div class="d-flex flex-center flex-column flex-lg-row-fluid">
+  <!--begin::Wrapper-->
+  <div class="w-100 mw-650px mx-auto p-10 px-5 px-3 px-sm-8 px-lg-10">
+    <!--begin::Heading-->
+    <div class="text-center mb-11">
+      <!--begin::Title-->
+      <h1 class="text-gray-900 fw-bolder mb-3">
+        Sign up to <span class="text-primary">MyMedicare</span>
+      </h1>
+      <!--end::Title-->
+    </div>
+    <!--end::Heading-->
+
+    <!-- Step 1: Select Account Category -->
+    <div class="mb-8">
+      <div class="fv-row">
+        <div class="pe-3 mb-4">
+          <div class="fs-5 fw-semibold mb-2">Account Classification</div>
+          <div class="x fs-7">
+            Select whether you are a Patient, Doctor, or Branch Partner.
+          </div>
+        </div>
+
+        <!-- Account Nav Buttons -->
+        <div
+          class="d-flex flex-column flex-md-row gap-3"
+          data-kt-buttons="true"
+          data-kt-buttons-target="[data-kt-button]"
+        >
+          <!-- Patient Button -->
+          <label
+            class="role-option btn bg-light btn-color-gray-600 btn-active-text-gray-800 border border-3 border-gray-100 border-active-primary p-5 d-flex align-items-center mb-0 active"
+            data-kt-button="true"
+          >
+            <input
+              class="btn-check"
+              type="radio"
+              name="user_role"
+              value="patient"
+              checked
+            />
+            <i class="ki-outline ki-user fs-2x pe-0 me-3"></i>
+            <span class="d-block fw-semibold text-start">
+              <span class="role-title fw-bold fs-5 mb-2"> Patient </span>
+            </span>
+          </label>
+
+          <!-- Doctor Button -->
+          <label
+            class="role-option btn bg-light btn-color-gray-600 btn-active-text-gray-800 border border-3 border-gray-100 border-active-primary p-5 d-flex align-items-center mb-0"
+            data-kt-button="true"
+          >
+            <input
+              class="btn-check"
+              type="radio"
+              name="user_role"
+              value="doctor"
+            />
+            <i class="ki-outline ki-plus-square fs-2x pe-0 me-3"></i>
+            <span class="d-block fw-semibold text-start">
+              <span class="role-title fw-bold fs-5 mb-2"> Doctor </span>
+            </span>
+          </label>
+
+          <!-- Branch Partner Button -->
+          <label
+            class="role-option btn bg-light btn-color-gray-600 btn-active-text-gray-800 border border-3 border-gray-100 border-active-primary p-5 d-flex align-items-center mb-0"
+            data-kt-button="true"
+          >
+            <input
+              class="btn-check"
+              type="radio"
+              name="user_role"
+              value="partner"
+            />
+            <i class="ki-outline ki-shop fs-2x pe-0 me-3"></i>
+            <span class="d-block fw-semibold text-start">
+              <span class="role-title fw-bold fs-5 mb-2"> Branch Partner </span>
+            </span>
+          </label>
+        </div>
+
+        <div class="fv-plugins-message-container invalid-feedback"></div>
+      </div>
+    </div>
+
+    <!-- Step 2: Fill out Category -->
+    <!--begin::Tab Content-->
+    <div class="tab-content">
+      <!-- FORM 1: PATIENT -->
+      <div class="tab-pane fade show active" id="kt_sign_up_patient">
+        <form
+          class="form w-100"
+          novalidate="novalidate"
+          id="form_patient"
+          action="/auth/signup-patient"
+          method="POST"
+        >
+          <!-- Full Name -->
+          <div class="form-floating mb-7">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputFullName"
+              placeholder="John Doe"
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInput">First Name</label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputFullName-error"
+            >
+              Full name must be at least 5 characters
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-floating mb-7">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInputEmail"
+              placeholder="name@example.com"
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInput">Email address</label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputEmail-error"
+            >
+              Email is required
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="d-flex gap-3 flex-wrap">
+            <!-- Phone Code (Dropdown) -->
+            <div class="fv-row mb-7 w-30">
+              <select
+                class="form-select form-select-lg"
+                data-control="select2"
+                data-placeholder="Phone code"
+                data-hide-search="true"
+                id="floatingSelect-patient"
+                aria-label="Floating label select example"
+                required
+              >
+                <option></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+              <div
+                class="text-danger fs-7 mt-2 d-none"
+                id="floatingSelect-patient-error"
+              >
+                Phone code is required
+              </div>
+            </div>
+
+            <!-- Phone Number (Input) -->
+            <div class="form-floating mb-7 flex-grow-1">
+              <input
+                type="tel"
+                class="form-control form-control-lg"
+                id="floatingInputPhoneNumber"
+                placeholder=""
+                autocomplete="off"
+                maxlength="11"
+                pattern="[0-9]{11}"
+                inputmode="numeric"
+                required
+              />
+              <label for="floatingInputPhoneNumber">Phone Number</label>
+              <div
+                class="text-danger fs-7 mt-2 d-none"
+                id="floatingInputPhoneNumber-error"
+              >
+                Phone number must be at least 11 digits
+              </div>
+            </div>
+          </div>
+
+          <!--Start::Passwords-->
+          <!-- Password -->
+          <div class="form-floating mb-4" data-kt-password-meter="true">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              id="floatingInputPassword-patient"
+              placeholder=""
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputPassword-patient">Password</label>
+            <span
+              class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
+              data-kt-password-meter-control="visibility"
+            >
+              <i class="ki-outline ki-eye-slash fs-2"></i>
+              <i class="ki-outline ki-eye fs-2 d-none"></i>
+            </span>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputPassword-patient-error"
+            >
+              Password is required
+            </div>
+          </div>
+
+          <!-- Password Rules -->
+          <div id="password-rules-patient" class="d-none mb-4">
+            <div id="rule-length-patient" class="pill x">15+ characters</div>
+            <div id="rule-uppercase-patient" class="pill x">Uppercase</div>
+            <div id="rule-number-patient" class="pill x">Numbers</div>
+            <div id="rule-special-patient" class="pill x">
+              Special character (@, $, !, %, *, ?, &)
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="form-floating mb-4" data-kt-password-meter="true">
+            <input
+              type="password"
+              class="form-control"
+              name="confirmPassword"
+              id="floatingInputConfirmPassword-patient"
+              placeholder=""
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputConfirmPassword-patient"
+              >Confirm Password</label
+            >
+            <span
+              class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
+              data-kt-password-meter-control="visibility"
+            >
+              <i class="ki-outline ki-eye-slash fs-2"></i>
+              <i class="ki-outline ki-eye fs-2 d-none"></i>
+            </span>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputConfirmPassword-patient-error"
+            >
+              Confirm Password is required
+            </div>
+          </div>
+
+          <!-- Confirm Password Rules -->
+          <div id="confirm-password-rules-patient" class="d-none mb-4">
+            <div id="rule-match-patient" class="pill x">
+              Passwords do not match
+            </div>
+          </div>
+          <!--End::Passwords-->
+
+          <!-- Agree to Terms & Conditions -->
+          <div class="fv-row mb-8 mt-8">
+            <label class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="toc"
+                id="checkbox-patient"
+                value="1"
+                required
+              />
+              <span class="form-check-label fw-semibold text-gray-700 fs-6 ms-1"
+                >I Agree & <a href="#" class="ms-1 link-primary">Terms</a> and
+                <a href="#" class="ms-1 link-primary">conditions.</a></span
+              >
+            </label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="checkbox-patient-error"
+            >
+              You must agree to the terms and conditions.
+            </div>
+          </div>
+
+          <!-- Submit Button: Patient -->
+          <div class="d-grid mb-10">
+            <button type="submit" class="btn btn-primary">
+              <span class="indicator-label">Sign Up as Patient</span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- End Patient Form -->
+
+      <!-- FORM 2: DOCTOR -->
+      <div class="tab-pane fade" id="kt_sign_up_doctor">
+        <form
+          class="form w-100"
+          novalidate="novalidate"
+          id="form_doctor"
+          action="/auth/signup-doctor"
+          method="POST"
+        >
+          <!-- Full Name -->
+          <div class="form-floating mb-7">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputFullName-doctor"
+              placeholder="John Doe"
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputFullName-doctor">First Name</label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputFullName-doctor-error"
+            >
+              Full name must be at least 5 characters
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-floating mb-7">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInputEmail-doctor"
+              placeholder="name@example.com"
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputEmail-doctor">Email address</label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputEmail-doctor-error"
+            >
+              Email is required
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="d-flex gap-3 flex-wrap">
+            <!-- Phone Code (Dropdown) -->
+            <div class="fv-row mb-7 w-30">
+              <select
+                class="form-select form-select-lg"
+                data-control="select2"
+                data-placeholder="Phone code"
+                data-hide-search="true"
+                id="floatingSelect-doctor"
+                aria-label="Floating label select example"
+                required
+              >
+                <option></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+              <div
+                class="text-danger fs-7 mt-2 d-none"
+                id="floatingSelect-doctor-error"
+              >
+                Phone code is required
+              </div>
+            </div>
+
+            <!-- Phone Number (Input) -->
+            <div class="form-floating mb-7 flex-grow-1">
+              <input
+                type="tel"
+                class="form-control form-control-lg"
+                id="floatingInputPhoneNumber-doctor"
+                placeholder=""
+                autocomplete="off"
+                maxlength="11"
+                pattern="[0-9]{11}"
+                inputmode="numeric"
+                required
+              />
+              <label for="floatingInputPhoneNumber-doctor">Phone Number</label>
+              <div
+                class="text-danger fs-7 mt-2 d-none"
+                id="floatingInputPhoneNumber-doctor-error"
+              >
+                Phone number must be at least 11 digits
+              </div>
+            </div>
+          </div>
+
+          <!-- Specialty -->
+          <div class="fv-row mb-7 w-100">
+            <select
+              class="form-select form-select-lg"
+              data-control="select2"
+              data-placeholder="Select Specialty"
+              data-hide-search="true"
+              id="floatingInputSpecialty"
+              aria-label="Floating label select example"
+              required
+            >
+              <option></option>
+              <option value="1">General Practitioner</option>
+              <option value="2">Registered Nurse</option>
+              <option value="3">BSc Nurse</option>
+            </select>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputSpecialty-error"
+            >
+              Specialty is required
+            </div>
+          </div>
+
+          <!--Start::Passwords-->
+          <!-- Password -->
+          <div class="form-floating mb-4" data-kt-password-meter="true">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              id="floatingInputPassword-doctor"
+              placeholder=""
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputPassword-doctor">Password</label>
+            <span
+              class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
+              data-kt-password-meter-control="visibility"
+            >
+              <i class="ki-outline ki-eye-slash fs-2"></i>
+              <i class="ki-outline ki-eye fs-2 d-none"></i>
+            </span>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputPassword-doctor-error"
+            >
+              Password is required
+            </div>
+          </div>
+
+          <!-- Password Rules -->
+          <div id="password-rules-doctor" class="d-none mb-4">
+            <div id="rule-length-doctor" class="pill x">15+ characters</div>
+            <div id="rule-uppercase-doctor" class="pill x">Uppercase</div>
+            <div id="rule-number-doctor" class="pill x">Numbers</div>
+            <div id="rule-special-doctor" class="pill x">
+              Special character (@, $, !, %, *, ?, &)
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="form-floating mb-4" data-kt-password-meter="true">
+            <input
+              type="password"
+              class="form-control"
+              name="confirmPassword"
+              id="floatingInputConfirmPassword-doctor"
+              placeholder=""
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputConfirmPassword-doctor"
+              >Confirm Password</label
+            >
+            <span
+              class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
+              data-kt-password-meter-control="visibility"
+            >
+              <i class="ki-outline ki-eye-slash fs-2"></i>
+              <i class="ki-outline ki-eye fs-2 d-none"></i>
+            </span>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputConfirmPassword-doctor-error"
+            >
+              Confirm Password is required
+            </div>
+          </div>
+
+          <!-- Confirm Password Rules -->
+          <div id="confirm-password-rules-doctor" class="d-none mb-4">
+            <div id="rule-match-doctor" class="pill x">
+              Passwords do not match
+            </div>
+          </div>
+          <!--End::Passwords-->
+
+          <!-- Agree to Terms & Conditions -->
+          <div class="fv-row mb-8 mt-8">
+            <label class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="toc"
+                id="checkbox-doctor"
+                value="1"
+                required
+              />
+              <span class="form-check-label fw-semibold text-gray-700 fs-6 ms-1"
+                >I Agree & <a href="#" class="ms-1 link-primary">Terms</a> and
+                <a href="#" class="ms-1 link-primary">conditions.</a></span
+              >
+            </label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="checkbox-doctor-error"
+            >
+              You must agree to the terms and conditions.
+            </div>
+          </div>
+
+          <!-- Submit Button: Doctor -->
+          <div class="d-grid mb-10">
+            <button type="submit" class="btn btn-primary">
+              Sign Up as Doctor
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- End Doctor Form -->
+
+      <!-- FORM 3: BRANCH PARTNER -->
+      <div class="tab-pane fade" id="kt_sign_up_partner">
+        <form
+          class="form w-100"
+          novalidate="novalidate"
+          id="form_partner"
+          action="/auth/signup-partner"
+          method="POST"
+        >
+          <!-- Branch Name -->
+          <div class="form-floating mb-7">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputBranchName"
+              placeholder="Yaba Branch"
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInput">Branch Name</label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputBranchName-error"
+            >
+              Branch name is required
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-floating mb-7">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInputBranchEmail"
+              placeholder="name@example.com"
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputBranchEmal">Branch email address</label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputBranchEmail-error"
+            >
+              Branch email is required
+            </div>
+          </div>
+
+          <!-- HQ Code -->
+          <div class="form-floating mb-7">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputHqCode"
+              placeholder="John Doe"
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputHqCode">HQ Code</label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputHqCode-error"
+            >
+              HQ Code is required
+            </div>
+          </div>
+
+          <!--Start::Passwords-->
+          <!-- Password -->
+          <div class="form-floating mb-4" data-kt-password-meter="true">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              id="floatingInputPassword-partner"
+              placeholder=""
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputPassword-partner">Password</label>
+            <span
+              class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
+              data-kt-password-meter-control="visibility"
+            >
+              <i class="ki-outline ki-eye-slash fs-2"></i>
+              <i class="ki-outline ki-eye fs-2 d-none"></i>
+            </span>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputPassword-partner-error"
+            >
+              Password is required
+            </div>
+          </div>
+
+          <!-- Password Rules -->
+          <div id="password-rules-partner" class="d-none mb-4">
+            <div id="rule-length-partner" class="pill x">15+ characters</div>
+            <div id="rule-uppercase-partner" class="pill x">Uppercase</div>
+            <div id="rule-number-partner" class="pill x">Numbers</div>
+            <div id="rule-special-partner" class="pill x">
+              Special character (@, $, !, %, *, ?, &)
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="form-floating mb-4" data-kt-password-meter="true">
+            <input
+              type="password"
+              class="form-control"
+              name="confirmPassword"
+              id="floatingInputConfirmPassword-partner"
+              placeholder=""
+              autocomplete="off"
+              required
+            />
+            <label for="floatingInputConfirmPassword-partner"
+              >Confirm Password</label
+            >
+            <span
+              class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
+              data-kt-password-meter-control="visibility"
+            >
+              <i class="ki-outline ki-eye-slash fs-2"></i>
+              <i class="ki-outline ki-eye fs-2 d-none"></i>
+            </span>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="floatingInputConfirmPassword-partner-error"
+            >
+              Confirm Password is required
+            </div>
+          </div>
+
+          <!-- Confirm Password Rules -->
+          <div id="confirm-password-rules-partner" class="d-none mb-4">
+            <div id="rule-match-partner" class="pill x">
+              Passwords do not match
+            </div>
+          </div>
+          <!--End::Passwords-->
+
+          <!-- Agree to Terms & Conditions -->
+          <div class="fv-row mb-8 mt-8">
+            <label class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="toc"
+                id="checkbox-partner"
+                value="1"
+                required
+              />
+              <span class="form-check-label fw-semibold text-gray-700 fs-6 ms-1"
+                >I Agree & <a href="#" class="ms-1 link-primary">Terms</a> and
+                <a href="#" class="ms-1 link-primary">conditions.</a></span
+              >
+            </label>
+
+            <div
+              class="text-danger fs-7 mt-2 d-none"
+              id="checkbox-partner-error"
+            >
+              You must agree to the terms and conditions.
+            </div>
+          </div>
+
+          <!-- Submit Button: Partner -->
+          <div class="d-grid mb-10">
+            <button type="submit" class="btn btn-primary">
+              Sign Up as Partner
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- End Partner Form -->
+    </div>
+    <!--end::Tab Content-->
+
+    <!-- Sign In Link -->
+    <div class="text-gray-500 text-center fw-semibold fs-6">
+      Don't have an account?
+      <a href="/login" class="link-primary fw-bold">Sign In</a>
+    </div>
+  </div>
+  <!--end::Wrapper-->
+</div>
+<!--end::Form-->

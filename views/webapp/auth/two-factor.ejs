@@ -1,0 +1,117 @@
+<!-- views/webapp/auth/two-factor.ejs -->
+
+<!--begin::Form-->
+<div class="d-flex flex-center flex-column flex-lg-row-fluid">
+  <!--begin::Wrapper-->
+  <div class="w-100 mw-650px mx-auto p-10 px-5 px-3 px-sm-8 px-lg-10">
+    <!--begin::Form-->
+    <form
+      class="form w-100 mb-13"
+      novalidate="novalidate"
+      data-kt-redirect-url="index.html"
+      id="kt_sing_in_two_factor_form"
+    >
+      <!--begin::Heading-->
+      <div class="text-center mb-10">
+        <!--begin::Title-->
+        <h1 class="text-gray-900 mb-3">Two-Factor Verification</h1>
+        <!--end::Title-->
+        <!--begin::Sub-title-->
+        <div class="text-muted fw-semibold fs-5 mb-5">
+          Enter the verification code we sent to your email address
+        </div>
+        <!--end::Sub-title-->
+      </div>
+      <!--end::Heading-->
+      <!--begin::Section-->
+      <div class="mb-10">
+        <!--begin::Label-->
+        <div class="fw-bold text-start text-gray-900 fs-6 mb-1 ms-1">
+          Type your 6 digit security code
+        </div>
+        <!--end::Label-->
+        <!--begin::Input group-->
+        <div class="d-flex flex-wrap flex-stack">
+          <input
+            type="text"
+            name="code_1"
+            data-inputmask="'mask': '9', 'placeholder': ''"
+            maxlength="1"
+            class="form-control bg-transparent h-60px w-60px fs-2qx text-center mx-1 my-2"
+            value=""
+          />
+          <input
+            type="text"
+            name="code_2"
+            data-inputmask="'mask': '9', 'placeholder': ''"
+            maxlength="1"
+            class="form-control bg-transparent h-60px w-60px fs-2qx text-center mx-1 my-2"
+            value=""
+          />
+          <input
+            type="text"
+            name="code_3"
+            data-inputmask="'mask': '9', 'placeholder': ''"
+            maxlength="1"
+            class="form-control bg-transparent h-60px w-60px fs-2qx text-center mx-1 my-2"
+            value=""
+          />
+          <input
+            type="text"
+            name="code_4"
+            data-inputmask="'mask': '9', 'placeholder': ''"
+            maxlength="1"
+            class="form-control bg-transparent h-60px w-60px fs-2qx text-center mx-1 my-2"
+            value=""
+          />
+          <input
+            type="text"
+            name="code_5"
+            data-inputmask="'mask': '9', 'placeholder': ''"
+            maxlength="1"
+            class="form-control bg-transparent h-60px w-60px fs-2qx text-center mx-1 my-2"
+            value=""
+          />
+          <input
+            type="text"
+            name="code_6"
+            data-inputmask="'mask': '9', 'placeholder': ''"
+            maxlength="1"
+            class="form-control bg-transparent h-60px w-60px fs-2qx text-center mx-1 my-2"
+            value=""
+          />
+        </div>
+        <!--begin::Input group-->
+      </div>
+      <!--end::Section-->
+      <!--begin::Submit-->
+      <div class="d-flex flex-center">
+        <button
+          type="button"
+          id="kt_sing_in_two_factor_submit"
+          class="btn btn-lg btn-primary fw-bold"
+        >
+          <span class="indicator-label">Submit</span>
+          <span class="indicator-progress"
+            >Please wait...
+            <span
+              class="spinner-border spinner-border-sm align-middle ms-2"
+            ></span
+          ></span>
+        </button>
+      </div>
+      <!--end::Submit-->
+    </form>
+    <!--end::Form-->
+    <!--begin::Notice-->
+    <div class="text-center fw-semibold fs-5">
+      <span class="text-muted me-1">Didn’t get the code ?</span>
+      <a href="#" class="link-primary fs-5 me-1">Resend</a>
+      <span class="text-muted me-1">or</span>
+      <a href="#" class="link-primary fs-5">Call Us</a>
+    </div>
+    <!--end::Notice-->
+  </div>
+  <!--end::Wrapper-->
+</div>
+<!--end::Form-->

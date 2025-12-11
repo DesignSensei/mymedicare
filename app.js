@@ -28,6 +28,19 @@ app.set("views", path.join(__dirname, "views"));
 /* ---------- Use layout ---------- */
 app.use(expressLayouts);
 
+/* ---------- Request logging ---------- */
+app.use((req, res, next) => {
+  res.on("finish", () => {
+    const message = `${req.method} ${req.originalUrl} ${res.statusCode}`;
+    const meta = {
+      user: req.user ? req.user.email : "Guest",
+      timestamp: new Date().toISOString(),
+    };
+    logger.info(message, meta);
+  });
+  next();
+});
+
 /* ---------- Mount Routes ---------- */
 app.use("/", pageRoutes);
 app.use("/", authRoutes);
